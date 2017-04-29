@@ -28,7 +28,7 @@ img {
 .bird-box {
     position: relative;
     height: 600px;
-    background-image: url("images/background-header.jpg");
+    background-image: url("https://raw.githubusercontent.com/succkarz/birds-chirp/blob/master/images/background-header.jpg");
     background-size: auto 1080px;
     background-position: top center;
     background-attachment: fixed;
@@ -38,7 +38,7 @@ img {
 .logo {
     height: 100px;
     width: 100%;
-    background-image: url("images/yolo2.png");
+    background-image: url("https://raw.githubusercontent.com/succkarz/birds-chirp/master/images/yolo2.png");
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -49,7 +49,7 @@ img {
 .fore-bird {
     width: 960px;
     height: 222px;
-    background-image: url("images/birdsfore2.png");
+    background-image: url("https://raw.githubusercontent.com/succkarz/birds-chirp/master/images/birdsfore2.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     position: absolute;
@@ -61,7 +61,7 @@ img {
 .back-bird {
     width: 960px;
     height: 255px;
-    background-image: url("images/birdsblur.png");
+    background-image: url("https://raw.githubusercontent.com/succkarz/birds-chirp/master/images/birdsblur.png");
     background-repeat: no-repeat;
     background-position: top left;
     position: absolute;
@@ -113,7 +113,7 @@ img {
 /* Large WIndows */
 .large-window{
   height: 640px;
-  background: url("images/b10.jpg") top center no-repeat fixed;
+  background: url("https://raw.githubusercontent.com/succkarz/birds-chirp/master/images/b10.jpg") top center no-repeat fixed;
   margin-top: 100px;
   border-radius: 50%;
 
