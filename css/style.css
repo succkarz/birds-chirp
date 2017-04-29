@@ -1,0 +1,185 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    color: #aaa;
+    weight: 300;
+}
+
+figure {
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content article {
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* parallax */
+
+.bird-box {
+    position: relative;
+    height: 600px;
+    background-image: url("/media/linuxswagtop/Charlie/Projects/Project2k17/images/background-header.jpg");
+    background-size: auto 1080px;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.logo {
+    height: 100px;
+    width: 100%;
+    background-image: url("/media/linuxswagtop/Charlie/Projects/Project2k17/images/yolo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.fore-bird {
+    width: 960px;
+    height: 222px;
+    background-image: url("/media/linuxswagtop/Charlie/Projects/Project2k17/images/birdsfore2.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    top: 135px;
+    margin-left: -480px;
+}
+
+.back-bird {
+    width: 960px;
+    height: 255px;
+    background-image: url("/media/linuxswagtop/Charlie/Projects/Project2k17/images/birdsblur.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    margin-left: -480px;
+}
+
+
+/* Bird Grid */
+.clothes-pics{
+  margin-bottom: 100px;
+}
+.clothes-pics figure {
+    margin-bottom: 10px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.clothes-pics .is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.clothes-pics img {
+    dispay: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.clothes-pics img figcaptions:hover{
+    left: 100%;
+}
+.clothes-pics img:hover{
+  transform: scale(1.1);
+}
+.clothes-pics figcaption{
+  position: absolute;
+  bottom: 10px;
+  left: 0%;
+  background: black;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out;
+}
+/* Large WIndows */
+.large-window{
+  height: 640px;
+  background: url("/media/linuxswagtop/Charlie/Projects/Project2k17/images/b10.jpg") top center no-repeat fixed;
+  margin-top: 100px;
+  border-radius: 50%;
+
+}
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(http://fonts.gstatic.com/s/raleway/v11/ZKwULyCG95tk6mOqHQfRBCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(http://fonts.gstatic.com/s/raleway/v11/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v11/STBOO2waD2LpX45SXYjQBSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
