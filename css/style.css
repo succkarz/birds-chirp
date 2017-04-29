@@ -28,7 +28,7 @@ img {
 .bird-box {
     position: relative;
     height: 600px;
-    background-image: url("https://raw.githubusercontent.com/succkarz/birds-chirp/blob/master/images/background-header.jpg");
+    background-image: url("https://raw.githubusercontent.com/succkarz/birds-chirp/master/images/background-header.jpg");
     background-size: auto 1080px;
     background-position: top center;
     background-attachment: fixed;
