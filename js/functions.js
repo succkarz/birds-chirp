@@ -1,6 +1,12 @@
-$(window).scroll(function() {
+var pContainerHeight = $('.bird-box').height();
+
+$(window).scroll(function(){
+
   var wScroll = $(this).scrollTop();
-  $('.logo').css({
+
+  if (wScroll <= pContainerHeight) {
+
+    $('.logo').css({
     'transform': 'translate(0px, ' + wScroll / 2 + '%)'
   });
   $('.back-bird').css({
