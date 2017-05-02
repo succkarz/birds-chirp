@@ -15,6 +15,7 @@ $(window).scroll(function(){
   $('.fore-bird').css({
     'transform': 'translate(0px, -' + wScroll / 10 + '%)'
   });
+  }
   if (wScroll > $('.clothes-pics').offset().top - $(window).height() / 1.5) {
 
     $('.clothes-pics figure').each(function(i) {
