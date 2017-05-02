@@ -19,6 +19,7 @@ img {
 	z-index: 2;
 	background: white;
 	margin-bottom: 400px;
+	overflow: hidden;
 }
 .content article {
   padding: 100px 0;
@@ -80,49 +81,35 @@ img {
 /* Bird Grid */
 
 .clothes-pics {
-  margin-bottom: 100px;
-}
-
-.clothes-pics figure {
-  margin-bottom: 10px;
-  position: relative;
-  opacity: 0;
-  transform: translateX(30px);
-  transition: all 0.4s ease-in-out;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.clothes-pics .is-showing {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-.clothes-pics img {
-  display: block;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
-
-.clothes-pics img:hover figcaptions {
-  left: 100%;
-}
-
-.clothes-pics img:hover {
-  transform: scale(1.1);
-}
-
-.clothes-pics figcaption {
-  position: absolute;
-  bottom: 10px;
-  left: 0%;
-  background: black;
-  color: white;
-  padding: 2px 8px;
-  font-size: 11px;
-  transition: all 0.3s ease-in-out;
-}
-
+  margin-bottom: 100px; }
+  .clothes-pics figure {
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    cursor: pointer; }
+    .clothes-pics figure.is-showing {
+      opacity: 1;
+      transform: translateX(0px); }
+    .clothes-pics figure img {
+      display: block;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out; }
+    .clothes-pics figure:hover figcaption {
+      left: 0%; }
+    .clothes-pics figure:hover img {
+      transform: scale(1.1); }
+  .clothes-pics figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out; }
 
 /* Large WIndows */
 
@@ -154,25 +141,19 @@ img {
 }
 
 /* footer */
-footer{
-	background: black;
-	color: white;
-	padding: 40px 0;
-	position: fixed;
-	bottom: 0;
-	width: 100%:
-}
-.footer-stuff{
-	max-width: 55%;
-	margin: 0 auto;
-}
-footer ul{
-	list-style: none;	
-	text-decoration: none;
-}
-footer a{
-	color: white;
-}
+footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; }
+  footer .footer-stuff {
+    max-width: 640px;
+    margin: 0 auto; }
+  footer a {
+    color: white; }
 /* latin-ext */
 
 @font-face {
